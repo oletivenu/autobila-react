@@ -1,0 +1,1278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autobila</title>
+
+	<!-- STYLES -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+  <link type="text/css" rel="stylesheet" href="css/global.css">
+  <link type="text/css" rel="stylesheet" href="css/tabs.css">
+  <link type="text/css" rel="stylesheet" href="css/responsive_bootstrap_carousel_mega_min.css"  media="all">
+    
+    
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Quicksand:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+  
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexisel.js"></script>  
+  <script type="text/javascript" src="js/jquery.min.js"></script>  
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+
+</head>
+
+<body>
+<div id="root1"></div>
+<div class="container-fluid navbar-fixed-top">
+    <div class="row white">
+<div class="top-header ">
+	<div class="container">
+    	<div class="col-xs-12 col-sm-6 col-lg-6 hidden-xs hidden-sm">
+        		<div class="row">
+                    <ul>
+                        <li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@gmail.com</a></li>
+                        <li>+1 125 1256 125</li>
+                    </ul>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-lg-6 right_nav pull-right">
+        	<div class="row">
+        	<ul class="pull-right ">
+            	<li><a href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#register"><i class="fa fa-file-text-o" aria-hidden="true"></i> Register</a></li>
+                <li><a href="#">Sell Your Car</a></li>
+                <button type="button" class="btn lan_btn">EN</button>                
+            </ul>
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+<!-- HEADER -->
+<div class="container">
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+      <div class="row">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img src="images/logo.png" class="img-responsive"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home <span class="slider"></span></a></li>
+        <li><a href="#">Used Cars</a></li>
+        <li><a href="#">New Cars</a></li>
+        <li><a href="#">Accessories</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Moto Directory</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forums <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+      </div>
+</nav>
+</div>
+        </div>
+</div>
+<!-- SEARCH -->
+<div class="container-fluid car_bg_section">
+<div class="row">
+	<div class="car_bg">
+    	
+    </div>
+</div>
+</div>
+<div class="container search_section">
+	<div class="search_bg box_shadow clearfix">
+    	<form>
+            <div class="col-lg-12 m_b_10 clearfix">
+        <div class="col-lg-10 col-sm-6 col-xs-12">
+        <div class="row">
+        	<div class="sr_tit">I Want to Buy</div> 
+            <div class="check_section">
+            <div class="checkbox checkbox-primary">
+                        <div class="checkbox checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
+                        <label for="inlineCheckbox1"> Used Vichcle </label>
+                    </div>
+                    <div class="checkbox checkbox-success checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option1" >
+                        <label for="inlineCheckbox2"> New Vichcle </label>
+                    </div>
+                        
+                    </div>
+                    </div>
+               </div>
+        </div>
+            <div class="col-lg-2 col-sm-6 col-xs-12 text-right">
+            <div class="row"> <a class="cursor" value="Show/Hide" onClick="showHideDiv('divMsg')">Advanced Search</a></div>
+                </div> 
+            </div>
+            
+            <div class="col-lg-10">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Select a Manufacturer</label>
+               <select class="form-control" id="">
+               <option>Select a Manufacturer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Select Model</label>
+             <select class="form-control" id="">
+               <option>Select Model</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Fuel Type</label>
+              <input type="email" class="form-control" id="" placeholder="Fuel Type" name="">
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Price Range</label>
+              <input type="email" class="form-control" id="" placeholder="Price Range" name="">
+            </div>
+    	</div>
+        
+          
+		<div id="divMsg" class="sr_show">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Select a Manufacturer</label>
+               <select class="form-control" id="">
+               <option>Select a Manufacturer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Select Model</label>
+             <select class="form-control" id="">
+               <option>Select Model</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Fuel Type</label>
+              <input type="email" class="form-control" id="" placeholder="Fuel Type" name="">
+            </div>
+    	</div>
+        
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+             <div class="form-group">
+              <label for="">Price Range</label>
+              <input type="email" class="form-control" id="" placeholder="Price Range" name="">
+            </div>
+    	</div>
+		</div>                 
+            
+            
+            </div>
+            
+        <div class="col-lg-2 col-sm-12 col-xs-12">
+           
+        <!-- <button type="submit" class="btn btn-default sr_btn pull-right">search <i class="fa fa-search" aria-hidden="true"></i></button>-->
+            
+            <a class="btn btn-primary btn-lg btn-icon-right m_t_25">SEARCH
+              <div class="btn-icon"><i class="fa fa-search"></i></div>
+              </a>
+            
+        </div>
+                    
+        </form>
+        
+     </div>
+</div>
+
+<div class="container">
+
+          <main class="o-main">
+    <div class="o-section">
+      <div id="tabs" class="c-tabs no-js">
+        <div class="c-tabs-nav">
+          <a href="#" class="c-tabs-nav__link is-active">
+            <i class="fa fa-car" aria-hidden="true"></i>
+            <span>Featured Used Cars</span>
+          </a>
+          <a href="#" class="c-tabs-nav__link">
+           <i class="fa fa-car" aria-hidden="true"></i>
+            <span>New Car In Dubai</span>
+          </a>
+        </div>
+        <div class="c-tab is-active">
+          <div class="c-tab__content">
+           
+              <div id="adv_gp_products_4_columns_carousel" class="carousel slide four_shows_one_move gp_products_carousel_wrapper" data-ride="carousel" data-interval="2000">
+
+			<!--========= Wrapper for slides =========-->
+			<div class="carousel-inner" role="listbox">
+
+				<!--========= 1st slide =========-->
+				<div class="item active">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 2nd slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car10.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 3rd slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car9.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 4th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car8.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 5th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car7.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 6th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car6.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 7th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 8th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+				
+			<!--======= Navigation Buttons =========-->
+
+			<!--======= Left Button =========-->
+			<a class="left carousel-control gp_products_carousel_control_left" href="#adv_gp_products_4_columns_carousel" role="button" data-slide="prev">
+				<span class="fa fa-angle-left gp_products_carousel_control_icons" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!--======= Right Button =========-->
+			<a class="right carousel-control gp_products_carousel_control_right" href="#adv_gp_products_4_columns_carousel" role="button" data-slide="next">
+				<span class="fa fa-angle-right gp_products_carousel_control_icons" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+		</div>
+           
+
+          </div>
+        </div>
+        <div class="c-tab">
+          <div class="c-tab__content">
+       
+                 <div id="adv_gp_products_3_columns_carousel" class="carousel slide four_shows_one_move gp_products_carousel_wrapper" data-ride="carousel" data-interval="2000">
+
+			<!--========= Wrapper for slides =========-->
+			<div class="carousel-inner" role="listbox">
+
+				<!--========= 1st slide =========-->
+				<div class="item active">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 2nd slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 3rd slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 4th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car4.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 5th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car5.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 6th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car6.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--========= 7th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car7.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--========= 8th slide =========-->
+				<div class="item">
+					<div class="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+						<div class="gp_products_inner">
+							<div class="gp_products_item_image">
+								<a href="#">
+									<img src="images/car8.jpg" />
+								</a>
+							</div>
+							<div class="gp_products_item_caption">
+								<ul class="gp_products_caption_name">
+									<li class="date"><i class="fa fa-calendar" aria-hidden="true"></i> April08, 2018</li>
+									<li><a href="#">2018 Cadillac CT6 Super Cruise can the car Really drive itself?</a></li>
+									<li class="rate">ACD 19,000</li>
+								</ul>
+							</div>
+							<div class="product_footer clearfix">
+							<div class="col-lg-6 col-xs-6 col-sm-6"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> Diesel</div></div>
+							<div class="col-lg-6 col-xs-6 col-sm-6 text-right"><div class="row"><i class="fa fa-tachometer" aria-hidden="true"></i> 20,000 KM</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+				
+			<!--======= Navigation Buttons =========-->
+
+			<!--======= Left Button =========-->
+			<a class="left carousel-control gp_products_carousel_control_left" href="#adv_gp_products_3_columns_carousel" role="button" data-slide="prev">
+				<span class="fa fa-angle-left gp_products_carousel_control_icons" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!--======= Right Button =========-->
+			<a class="right carousel-control gp_products_carousel_control_right" href="#adv_gp_products_3_columns_carousel" role="button" data-slide="next">
+				<span class="fa fa-angle-right gp_products_carousel_control_icons" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+		</div>
+              
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="o-section">
+      <div id="github-icons"></div>
+    </div>
+ 
+</main>
+
+</div>
+
+
+<div class="container-fluid wel_section">
+	<div class="row">
+		<div class="container">
+			<div class="col-lg-6">
+	<div class="welcome">
+    	<h1>Welcome to Autobila</h1>
+		<p>quiPPP is a collaborative platform that vitalizes crowd participation in Public-Private Projects and connects Corporates, Citizens, Domain Experts, NGOs with the Government to Initiate and Participate together in socially relevant projects.<br><br>
+		quiPPP is a collaborative platform that vitalizes crowd participation in Public-Private Projects and connects Corporates, Citizens, Domain Experts, NGOs with the Government to Initiate and Participate together in socially relevant projects.</p>
+		<div class="pull-right"><a href="#" class="read">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+    </div>
+</div>
+	<div class="col-lg-6">
+		<div class="wel-set row">
+		<div class="col-sm-6">
+			<div class="wel_options box_shadow">
+				<div class="wel_icon"><img src="images/total-icon.jpg" /></div>
+				<div class="wel_text"><div class="title">Total number of cars<span>103254</span></div></div>
+			</div>
+		</div>
+		
+		<div class="col-sm-6">
+			<div class="wel_options box_shadow">
+				<div class="wel_icon"><img src="images/value-icon.jpg" /></div>
+				<div class="wel_text"><div class="title">total value<span>103254</span></div></div>
+			</div>
+		</div>
+		
+		<div class="col-sm-6">
+			<div class="wel_options box_shadow">
+				<div class="wel_icon"><img src="images/sold-icon.jpg" /></div>
+				<div class="wel_text"><div class="title">cars sold this week<span>103254</span></div></div>
+			</div>
+		</div>
+		
+		<div class="col-sm-6">
+			<div class="wel_options box_shadow">
+				<div class="wel_icon"><img src="images/newcar-icon.jpg" /></div>
+				<div class="wel_text"><div class="title">new cars for sale<span>103254</span></div></div>
+			</div>
+		</div>		
+		</div>
+	</div>
+	</div>
+		</div>
+</div>
+
+<div class="container">
+    <div class="service_section">
+        
+    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 m_b_50">
+                <div class="b_asks_first row">
+                <div class="b_asks_first_circle"><span class="fa fa-search">&nbsp;</span></div>
+                <div class="b_asks_first_info">
+                <h2>ARE YOU LOOKING FOR A CAR?</h2>
+                <p>Search Our Inventory With Thousands Of Cars And More Cars Are Adding On Daily Basis</p>
+                </div>
+                <div class="b_asks_first_arrow"><a href="#"> <span class="fa fa-chevron-circle-right">&nbsp;</span> </a></div>
+                </div>
+                </div>    
+                
+        <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="b_asks_first row">
+                <div class="b_asks_first_circle"><span class="fa fa-usd">&nbsp;</span></div>
+                <div class="b_asks_first_info">
+                <h2>DO YOU WANT TO SELL A CAR?</h2>
+                <p>Search Our Inventory With Thousands Of Cars And More Cars Are Adding On Daily Basis</p>
+                </div>
+                <div class="b_asks_first_arrow"><a href="#"> <span class="fa fa-chevron-circle-right">&nbsp;</span> </a></div>
+                </div>
+                </div>    
+        
+    </div>
+        
+        
+        <div class="col-lg-3 col-sm-4 col-xs-12">
+    <div class="left-menu clearfix">
+                                    <div class="image">
+									<img src="images/bg-call-us.jpg" alt="#"  >
+                                </div>
+								<div class="main-content">
+									<ul><li class="item free">
+											<div class="icon"></div>
+											<div class="text">
+												<a class="name" href="#">Auto Loans</a>
+												<p>We are with You</p>
+											</div>
+										</li>
+										<li class="item protec">
+											<div class="icon"></div>
+											<div class="text">
+												<a class="name" href="#">Order Protection</a>
+												<p>Secured Information</p>
+											</div>
+										</li>
+										<li class="item gift">
+											<div class="icon"></div>
+											<div class="text">
+												<a class="name" href="#">Promotion Gift</a>
+												<p>Special Offer!</p>
+											</div>
+										</li>
+										<li class="item money-back">
+											<div class="icon"></div>
+											<div class="text">
+												<a class="name" href="#">Money Back</a>
+												<p>Return over 30 Days</p>
+											</div>
+										</li>
+									</ul></div>
+								
+                    </div>    
+        </div>
+    </div>
+    </div>
+
+
+<div class="container">
+	<div class="logo_section">
+		<h2>Certified official dealers</h2>
+		<div class="logo_title"><div class="or-seperator"><i><i class="fa fa-car" aria-hidden="true"></i></i></div></div>
+        
+        <ul id="flexiselDemo3">
+    <li><img src="images/logos/fiat.png" /></li>
+    <li><img src="images/logos/jagore.png" /></li>
+    <li><img src="images/logos/nissan.png" /></li>
+    <li><img src="images/logos/vw.png" /></li> 
+	<li><img src="images/logos/ford.png" /></li> 	
+</ul>  
+    
+	</div>
+</div>
+
+<!-- FOOTER -->
+<footer id="mc-footer" class="clearfix">
+        <!-- Footer top //Start-->
+        <div class="footer-top clearfix">
+            <div class="container">
+                <!-- Footer link //Start-->
+                <ul class="footer-link">
+                    <div class="col-sm-3 col-xs-12">
+                       <!-- <h3>Top Models</h3>
+                        <ul>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Honda</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Bentley</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Ferrari</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Dodge</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mitsubishi</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Jeep</a></li>
+                        </ul>-->
+                        <img src="images/logo.png">
+                        <div class="content-footer">
+                             <div class="address">
+                                            <span>
+                                                <span class="tittle">
+                                                    Address:
+                                                </span>
+                                                No 40 Baria Sreet 133/2 NY City, United States
+                                                </span>
+                               </div>
+                             <div class="email">
+                                            <span>
+                                                <span class="tittle">
+                                                    Email:
+                                                </span>                                                
+					                           contact@autobila.com				
+                                                </span>
+                                </div>
+                             <div class="phone">
+                                            <span>
+                                                <span class="tittle">
+                                                    Phone:
+                                                </span>
+                                                (888) 1900 86420 - (444) 1900 56789
+                                                </span>
+                                 </div>
+                             <div class="open-time">
+                                            <span>
+                                                <span class="tittle">
+                                                    Open Time:
+                                                </span>
+                                                8:00AM - 6:00PM
+                                                </span>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <h3>Top Brands</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Nissan Patrol</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mitsubishi Lancer</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Toyota Land Cruiser</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Land Rover Range Rover</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Nissan Tiida</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Nissan Altima</a></li>
+                        </ul>
+                   </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <h3>Top Cities</h3>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Dubai</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Ajman</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Abu Dhabi</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Fujairah</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Ras al Khaimah</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Sharjah</a></li>
+                        </ul>
+                   </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <h3>Security Policy</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Disclaimer</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Terms Of Use</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> FAQ</a></li>
+                             <li><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Contact Us</a></li>
+                        </ul>
+                   </div>
+                </ul>
+             
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-bottom">
+                <p>
+                    <b>About Us:</b> With the idea of creating the ideal destination for online shopping in UAE, ShopyMall.com was created back in 2013 with catalog of all electronic gadgets. It branched out to one-stop shop for products of all categories. ShopyMall.com makes it easy for you to shop easily from the comfort of your home. Shopping online at ShopyMall.com is simple, fast, secure and easy.
+                </p>
+                <p>
+                <b>Products:</b> From mobiles to tablets, laptops to electronics, jewellery to cosmetics, watches to sunglasses, television to gaming consoles we pride ourselves on selling all the products that are hip, trend and are valuable to our customers at ShopyMall.com. We sell plethora of items from the brands you love to shop from including but not limited to Adidas, Apple, CK (Calvin Klein), HP (Hewlett-Packard), Microsoft and more.
+                    </p>
+                <p>
+                <b>Offers:</b> Shopping.com is one of the preferred stores for online shopping in UAE and for all the right reasons such as convenience, cost-effective, product quality and personalized service. We have wide range of offers available which provides you with an opportunity to buy always at low prices. We provided thousands of deals every day along with bundle of products to provide you even more savings. Payment & Shipping: We at ShopyMall.com make best effort for your shopping experience to be as hassle free and smooth as possible. We provide you multiple payment methods including cash on delivery and online payments. We also run our own logistics to make sure your purchased item(s) reaches you as quick as possible in the best possible condition.
+                </p>
+                
+            </div>
+            
+            <div class="link-bottom clearfix">                                        
+								<div class="links"><label>ALL OFFERS IN DUBAI:</label>
+									<ul><li><a href="#">Special offers</a></li>
+										<li><a href="#">Daily Deals</a></li>
+										<li><a href="#">Bundle offers</a></li>
+									</ul></div>
+								<div class="links"><label>NEW CAR &amp; ACCESSORIES IN DUBAI:</label>
+									<ul><li><a href="#">Mobile Phones</a></li>
+										<li><a href="#">Mobiles Accessories</a></li>
+										<li><a href="#">Mobile Cases &amp; Covers</a></li>
+										<li><a href="#">Mobile Power Banks</a></li>
+										<li><a href="#">Mobile Memory Cards</a></li>
+									</ul></div>
+								<div class="links"><label>USED CAR &amp; ACCESSORIES IN UAE:</label>
+									<ul><li><a href="#">Tablets</a></li>
+										<li><a href="#">Tablet Accessories</a></li>
+										<li><a href="#">Tablet Cases &amp; Covers</a></li>
+										<li><a href="#">Tablet Power Banks</a></li>
+										<li><a href="#">Tablet Memory Cards</a></li>
+									</ul></div>
+								<div class="links"><label>APPLIANCES IN UAE:</label>
+									<ul><li><a href="#">Blenders</a></li>
+										<li><a href="#">Food Processors</a></li>
+										<li><a href="#">Irons</a></li>
+										<li><a href="#">Kettle</a></li>
+										<li><a href="#">Kitchen Ware</a></li>
+										<li><a href="#">Meat Grinders</a></li>
+										<li><a href="#">Mincers</a></li>
+										<li><a href="#">Microwave Ovens</a></li>
+										<li><a href="#">Other Home Appliances</a></li>
+										<li><a href="#">Cooker</a></li>
+									</ul></div>
+								
+                    </div>
+            
+    </div>
+        <!-- Footer top //end-->
+        <!-- Footer bottom //Start-->
+        <div class="footer-bottom clearfix">
+            <div class="container">
+            <div class="col-lg-6 foot-note">© 2018 - Autobila. All Rights Reserved.</div>
+                <div class="col-lg-6">
+                <ul class="bot-link">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Footer bottom //end-->
+    </footer>
+    
+  
+<!-- POPUP WINDOWS -->
+<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog" id="home_popup">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign in</h4>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="col-lg-6">
+          		<div class="login_section">
+                <form class="" method="post" action="#">
+                	<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+								</div>
+							</div>
+						</div>
+                        
+                       <div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								</div>
+							</div>
+						</div>
+                        
+                        <div class="clearfix">
+           <!-- <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>-->
+            <a href="#" class="pull-right text-success">Forgot Password?</a>
+        </div>
+        
+        <div class="form-group text-center">
+           <!-- <button type="submit" class="btn login-btn">Sign in</button>-->
+            <a class="btn btn-primary btn-lg btn-icon-right m_t_25">sign In
+              <div class="btn-icon"><i class="fa fa-sign-in"></i></div>
+              </a>
+        </div>
+        
+        <div class="or-seperator"><i>or</i></div>
+        
+        <div class="m_b_10 clearfix">
+        <div class="col-lg-6 col-xs-6">
+        <div class="text-center">
+            <a href="#" class="btn btn-primary btn-block btn_radius"><i class="fa fa-facebook"></i> Facebook</a>
+        </div>
+        </div>
+        
+         <div class="col-lg-6 col-xs-6">
+        <div class="text-center social-btn">
+			<a href="#" class="btn btn-danger btn-block btn_radius"><i class="fa fa-google"></i> Google</a>
+        </div>
+        </div>
+        </div>
+                        
+                        </form>
+                </div>
+          </div>
+          <div class="col-lg-6 hidden-xs">
+          	<div class="row">
+            	<div class="login_right">
+					<div class="security_policy">
+						<h4>We take your privacy seriously</h4>
+						<ul>
+							<li>We will never distrute your personal information without your consent</li>
+							<li>Your information is encrypted and stored in state of the art data centers located in the dubai</li>
+							<li>All data transmissions are secured via SSL encryption</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+        <div class="pull-left txt">Don’t have an account?</div>
+          <button type="button" class="btn btn-success">SIGN UP</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog" id="home_popup">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign up</h4>
+        </div>
+        <div class="modal-body">
+			<div class="reg_section clearfix">
+				<div class="m_b_20 reg_type_section"> 
+				<div class="sr_tit">Account Type</div>
+            <div class="check_section">
+            <div class="checkbox checkbox-primary">
+                        <div class="checkbox checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox3" value="option1" checked="">
+                        <label for="inlineCheckbox3"> Individual</label>
+                    </div>
+                    <div class="checkbox checkbox-success checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox4" value="option1" >
+                        <label for="inlineCheckbox4"> Dealer</label>
+                    </div>
+                        
+                    </div>
+                    </div>
+               </div>
+			   
+			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">First Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id=""  placeholder="First Name"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Last Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id=""  placeholder="Last Name"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="name" id=""  placeholder="Password"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Confirm Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="name" id=""  placeholder="Confirm Password"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id=""  placeholder="Email"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   			   <div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Mobile No</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id=""  placeholder="Mobile No"/>
+								</div>
+							</div>
+						</div>
+			   </div>
+			   
+			   <div class="col-lg-12 col-sm-12 col-xs-12">
+				 <div class="check_section">
+						<div class="checkbox checkbox-primary">
+                        <div class="checkbox checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox5" value="option1" >
+                        <label for="inlineCheckbox5"> I have read the Terms of Services </label>
+						</div>
+						</div>
+                    </div>
+			</div>
+			
+			<div class="form-group text-center">
+            <!--<button type="submit" class="btn login-btn">Sign Up</button>-->
+                 <a class="btn btn-primary btn-lg btn-icon-right m_t_25">sign up
+              <div class="btn-icon"><i class="fa fa-sign-in"></i></div>
+              </a>
+        </div>
+		
+        </div>
+        <div class="modal-footer">
+        <div class="pull-left txt">Already a Member?</div>
+          <button type="button" class="btn btn-success">SIGN IN</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+  
+
+
+<script>
+// HIDE AND SHOW //
+function showHideDiv(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+			
+// TABS //
+  var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+
+  myTabs.init();
+  
+  var myTabs = tabs({
+    el: '#tabs1',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+
+  myTabs.init();
+  
+  
+</script>
+
+
+<script>
+$.noConflict();
+$(window).load(function() {
+ $("#flexiselDemo3").flexisel({
+        visibleItems: 5,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }        
+    });
+});
+</script>
+
+<!-- CAROUSEL -->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/responsive_bootstrap_carousel.js"></script>  
+
+
+</body>
+</html>

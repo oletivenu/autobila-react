@@ -2,9 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autobila</title>
+
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/tabs.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/responsive_bootstrap_carousel_mega_min.css"
+      media="all"
+    />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Quicksand:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i"
+      rel="stylesheet"
+    />
+
+    <!-- SCRIPTS -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -19,20 +46,385 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- POPUP WINDOWS -->
+    <div class="modal fade" id="login" role="dialog">
+      <div class="modal-dialog" id="home_popup">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">Sign in</h4>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-lg-6">
+              <div class="login_section">
+                <form class="" method="post" action="#">
+                  <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label"
+                      >Your Name</label
+                    >
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user fa" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          id="name"
+                          placeholder="Enter your Name"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label"
+                      >Password</label
+                    >
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-lock fa-lg" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          name="password"
+                          id="password"
+                          placeholder="Enter your Password"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+                  <div class="clearfix">
+                    <!-- <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>-->
+                    <a href="#" class="pull-right text-success"
+                      >Forgot Password?</a
+                    >
+                  </div>
+
+                  <div class="form-group text-center">
+                    <!-- <button type="submit" class="btn login-btn">Sign in</button>-->
+                    <a class="btn btn-primary btn-lg btn-icon-right m_t_25"
+                      >sign In
+                      <div class="btn-icon"><i class="fa fa-sign-in"></i></div>
+                    </a>
+                  </div>
+
+                  <div class="or-seperator"><i>or</i></div>
+
+                  <div class="m_b_10 clearfix">
+                    <div class="col-lg-6 col-xs-6">
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary btn-block btn_radius"
+                          ><i class="fa fa-facebook"></i> Facebook</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xs-6">
+                      <div class="text-center social-btn">
+                        <a href="#" class="btn btn-danger btn-block btn_radius"
+                          ><i class="fa fa-google"></i> Google</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 hidden-xs">
+              <div class="row">
+                <div class="login_right">
+                  <div class="security_policy">
+                    <h4>We take your privacy seriously</h4>
+                    <ul>
+                      <li>
+                        We will never distrute your personal information without
+                        your consent
+                      </li>
+                      <li>
+                        Your information is encrypted and stored in state of the
+                        art data centers located in the dubai
+                      </li>
+                      <li>
+                        All data transmissions are secured via SSL encryption
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="pull-left txt">Don’t have an account?</div>
+            <button type="button" class="btn btn-success">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="register" role="dialog">
+      <div class="modal-dialog" id="home_popup">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">Sign up</h4>
+          </div>
+          <div class="modal-body">
+            <div class="reg_section clearfix">
+              <div class="m_b_20 reg_type_section">
+                <div class="sr_tit">Account Type</div>
+                <div class="check_section">
+                  <div class="checkbox checkbox-primary">
+                    <div class="checkbox checkbox-inline">
+                      <input
+                        type="checkbox"
+                        id="inlineCheckbox3"
+                        value="option1"
+                        checked=""
+                      />
+                      <label for="inlineCheckbox3"> Individual</label>
+                    </div>
+                    <div class="checkbox checkbox-success checkbox-inline">
+                      <input
+                        type="checkbox"
+                        id="inlineCheckbox4"
+                        value="option1"
+                      />
+                      <label for="inlineCheckbox4"> Dealer</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >First Name</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-user fa" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="First Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >Last Name</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-user fa" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >Password</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >Confirm Password</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >Email</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-envelope" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="name" class="cols-sm-2 control-label"
+                    >Mobile No</label
+                  >
+                  <div class="cols-sm-10">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-phone" aria-hidden="true"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id=""
+                        placeholder="Mobile No"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="check_section">
+                  <div class="checkbox checkbox-primary">
+                    <div class="checkbox checkbox-inline">
+                      <input
+                        type="checkbox"
+                        id="inlineCheckbox5"
+                        value="option1"
+                      />
+                      <label for="inlineCheckbox5">
+                        I have read the Terms of Services
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group text-center">
+                <!--<button type="submit" class="btn login-btn">Sign Up</button>-->
+                <a class="btn btn-primary btn-lg btn-icon-right m_t_25"
+                  >sign up
+                  <div class="btn-icon"><i class="fa fa-sign-in"></i></div>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="pull-left txt">Already a Member?</div>
+              <button type="button" class="btn btn-success">SIGN IN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // HIDE AND SHOW //
+      function showHideDiv(ele) {
+        var srcElement = document.getElementById(ele);
+        if (srcElement != null) {
+          if (srcElement.style.display == "block") {
+            srcElement.style.display = "none";
+          } else {
+            srcElement.style.display = "block";
+          }
+          return false;
+        }
+      }
+
+      // TABS //
+      var myTabs1 = tabs({
+        el: "#tabs",
+        tabNavigationLinks: ".c-tabs-nav__link",
+        tabContentContainers: ".c-tab"
+      });
+
+      myTabs1.init();
+
+      var myTabs2 = tabs({
+        el: "#tabs1",
+        tabNavigationLinks: ".c-tabs-nav__link",
+        tabContentContainers: ".c-tab"
+      });
+
+      myTabs2.init();
+    </script>
+
+    <script>
+      $.noConflict();
+      $(window).load(function() {
+        $("#flexiselDemo3").flexisel({
+          visibleItems: 5,
+          itemsToScroll: 1,
+          autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+          }
+        });
+      });
+    </script>
+
+    <!-- CAROUSEL -->
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/responsive_bootstrap_carousel.js"></script>
   </body>
 </html>
