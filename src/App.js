@@ -1,32 +1,26 @@
 import React from "react";
+import { BrowserRouter, Route, Router } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
-import NavBar from "./components/common/navBar";
-import SearchBar from "./components/common/searchBar";
-import TypeCars from "./components/common/typeCars";
-import WelcomeBar from "./components/common/welcomeBar";
-import ServiceBar from "./components/common/serviceBar";
-import DealersBar from "./components/common/dealersBar";
-import FooterBar from "./components/footerBar";
+import Main from "./pages/main";
+import Details from "./pages/details";
+import List from "./pages/list";
+import AutoSave from "./pages/autosave";
+import history from "./history";
 
-function App() {
-  return (
-    <React.Fragment>
-      <NavBar />
-      {/* <!-- SEARCH --> */}
-      <div className="container-fluid car_bg_section">
-        <div className="row">
-          <div className="car_bg" />
-        </div>
+const App = () => (
+  <div>
+    <BrowserRouter>
+      <div className="container">
+        <Router history={history}>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/details" component={Details} />
+          <Route exact path="/list" component={List} />
+          <Route exact path="/saveauto" component={AutoSave} />
+        </Router>
       </div>
-      <SearchBar />
-      <TypeCars />
-      <WelcomeBar />
-      <ServiceBar />
-      <DealersBar />
-      <FooterBar/>
-    </React.Fragment>
-  );
-}
+    </BrowserRouter>
+  </div>
+);
 
 export default App;

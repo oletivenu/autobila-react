@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link, NavLink } from "react-router-dom";
 const TypeCars = () => {
   return (
     <div className="container">
@@ -28,410 +28,394 @@ const TypeCars = () => {
                   <div className="carousel-inner" role="listbox">
                     {/* <!--========= 1st slide =========--> */}
                     <div className="item active">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 2nd slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car10.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 3rd slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car9.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 4th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car8.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 5th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car7.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 6th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car6.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 7th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 8th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
 
@@ -479,410 +463,394 @@ const TypeCars = () => {
                   <div className="carousel-inner" role="listbox">
                     {/* <!--========= 1st slide =========--> */}
                     <div className="item active">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 2nd slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 3rd slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 4th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car4.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 5th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car5.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 6th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car6.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 7th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car7.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     {/* <!--========= 8th slide =========--> */}
                     <div className="item">
-                      <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
-                        <div className="gp_products_inner">
-                          <div className="gp_products_item_image">
-                            <a href="#">
+                      <Link to="/details">
+                        <div className="col-xs-12 col-sm-6 col-md-3 gp_products_item">
+                          <div className="gp_products_inner">
+                            <div className="gp_products_item_image">
                               <img src="images/car8.jpg" />
-                            </a>
-                          </div>
-                          <div className="gp_products_item_caption">
-                            <ul className="gp_products_caption_name">
-                              <li className="date">
-                                <i
-                                  className="fa fa-calendar"
-                                  aria-hidden="true"
-                                />
-                                April08, 2018
-                              </li>
-                              <li>
-                                <a href="#">
+                            </div>
+                            <div className="gp_products_item_caption">
+                              <ul className="gp_products_caption_name">
+                                <li className="date">
+                                  <i
+                                    className="fa fa-calendar"
+                                    aria-hidden="true"
+                                  />
+                                  April08, 2018
+                                </li>
+                                <li>
                                   2018 Cadillac CT6 Super Cruise can the car
                                   Really drive itself?
-                                </a>
-                              </li>
-                              <li className="rate">ACD 19,000</li>
-                            </ul>
-                          </div>
-                          <div className="product_footer clearfix">
-                            <div className="col-lg-6 col-xs-6 col-sm-6">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                Diesel
-                              </div>
+                                </li>
+                                <li className="rate">ACD 19,000</li>
+                              </ul>
                             </div>
-                            <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
-                              <div className="row">
-                                <i
-                                  className="fa fa-tachometer"
-                                  aria-hidden="true"
-                                />
-                                20,000 KM
+                            <div className="product_footer clearfix">
+                              <div className="col-lg-6 col-xs-6 col-sm-6">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  Diesel
+                                </div>
+                              </div>
+                              <div className="col-lg-6 col-xs-6 col-sm-6 text-right">
+                                <div className="row">
+                                  <i
+                                    className="fa fa-tachometer"
+                                    aria-hidden="true"
+                                  />
+                                  20,000 KM
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
 

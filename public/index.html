@@ -30,6 +30,7 @@
     ></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    
     <script type="text/javascript" src="js/tabs.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!--
@@ -376,7 +377,7 @@
       </div>
     </div>
 
-    <script>
+    <script type="text/javascript">
       // HIDE AND SHOW //
       function showHideDiv(ele) {
         var srcElement = document.getElementById(ele);
@@ -391,37 +392,52 @@
       }
 
       // TABS //
-      var myTabs1 = tabs({
+      var myTabs = tabs({
         el: "#tabs",
         tabNavigationLinks: ".c-tabs-nav__link",
-        tabContentContainers: ".c-tab"
+        tabContentContainers: ".c-tab",
       });
 
-      myTabs1.init();
+      myTabs.init();
 
-      var myTabs2 = tabs({
+      var myTabs = tabs({
         el: "#tabs1",
         tabNavigationLinks: ".c-tabs-nav__link",
-        tabContentContainers: ".c-tab"
+        tabContentContainers: ".c-tab",
       });
 
-      myTabs2.init();
+      myTabs.init();
     </script>
 
-    <script>
+    <script type="text/javascript">
       $.noConflict();
-      $(window).load(function() {
+      $(window).load(function () {
         $("#flexiselDemo3").flexisel({
           visibleItems: 5,
           itemsToScroll: 1,
           autoPlay: {
             enable: true,
             interval: 5000,
-            pauseOnHover: true
-          }
+            pauseOnHover: true,
+          },
         });
       });
     </script>
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+      $("#list").click(function (event) {
+        event.preventDefault();
+        $("#products .item").addClass("list-group-item");
+      });
+      $("#grid").click(function (event) {
+        event.preventDefault();
+        $("#products .item").removeClass("list-group-item");
+        $("#products .item").addClass("grid-group-item");
+      });
+    });
+  </script>
 
     <!-- CAROUSEL -->
     <script src="js/jquery.touchSwipe.min.js"></script>
