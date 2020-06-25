@@ -25,14 +25,14 @@
 
     <!-- SCRIPTS -->
     <script
-      type="text/javascript"
+      type="text/jsx"
       src="http://code.jquery.com/jquery-1.7.1.min.js"
     ></script>
-    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/jsx" src="js/jquery.flexisel.js"></script>
+    <script type="text/jsx" src="js/jquery.min.js"></script>
     
-    <script type="text/javascript" src="js/tabs.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/jsx" src="js/tabs.js"></script>
+    <script type="text/jsx" src="js/bootstrap.min.js"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -377,8 +377,25 @@
       </div>
     </div>
 
-    <script type="text/javascript">
+    <script type="text/jsx">
+    
+    $(document).ready(function () {
+
+      $("#list").click(function (event) {
+        event.preventDefault();
+        $("#products .item").addClass("list-group-item");
+      });
+      $("#grid").click(function (event) {
+        event.preventDefault();
+        $("#products .item").removeClass("list-group-item");
+        $("#products .item").addClass("grid-group-item");
+      });
+    });
+  </script>
+
+    <script type="text/jsx">
       // HIDE AND SHOW //
+      
       function showHideDiv(ele) {
         var srcElement = document.getElementById(ele);
         if (srcElement != null) {
@@ -400,16 +417,10 @@
 
       myTabs.init();
 
-      var myTabs = tabs({
-        el: "#tabs1",
-        tabNavigationLinks: ".c-tabs-nav__link",
-        tabContentContainers: ".c-tab",
-      });
-
-      myTabs.init();
+      
     </script>
 
-    <script type="text/javascript">
+    <script type="text/jsx">
       $.noConflict();
       $(window).load(function () {
         $("#flexiselDemo3").flexisel({
@@ -423,24 +434,8 @@
         });
       });
     </script>
-    <script type="text/javascript">
-
-    $(document).ready(function () {
-
-      $("#list").click(function (event) {
-        event.preventDefault();
-        $("#products .item").addClass("list-group-item");
-      });
-      $("#grid").click(function (event) {
-        event.preventDefault();
-        $("#products .item").removeClass("list-group-item");
-        $("#products .item").addClass("grid-group-item");
-      });
-    });
-  </script>
-
     <!-- CAROUSEL -->
-    <script src="js/jquery.touchSwipe.min.js"></script>
-    <script src="js/responsive_bootstrap_carousel.js"></script>
+    <script type="text/jsx" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/jsx" src="js/responsive_bootstrap_carousel.js"></script>
   </body>
 </html>

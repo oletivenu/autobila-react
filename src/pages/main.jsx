@@ -21,7 +21,7 @@ function Main() {
       <SearchBar />
       <TypeCars />
       <WelcomeBar />
-      <ServiceBar />
+      {/* <ServiceBar /> */}
       <DealersBar />
       <FooterBar />
     </React.Fragment>

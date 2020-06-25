@@ -14,7 +14,7 @@ const App = () => (
       <div className="container">
         <Router history={history}>
           <Route exact path="/" component={Main} />
-          <Route exact path="/details" component={Details} />
+          <Route exact path="/auto/:id" component={Details} />
           <Route exact path="/list" component={List} />
           <Route exact path="/saveauto" component={AutoSave} />
         </Router>
