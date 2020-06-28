@@ -3,7 +3,7 @@ import NavBar from "../components/common/navBar";
 import SearchBar from "../components/common/searchBar";
 import FooterBar from "../components/footerBar";
 import AutoItemsList from "../components/autolist/autoItemsList";
-import autoitems from "../data/autolist.json";
+import { autoitems } from "../data/autolist";
 import { paginate } from "../utils/paginate";
 
 class List extends Component {

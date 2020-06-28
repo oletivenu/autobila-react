@@ -3,7 +3,7 @@ import React from "react";
 const Address = () => {
   return (
     <div className="col-sm-3 col-xs-12">
-      <img src="images/logo.png" />
+      <img src="/images/logo.png" />
       <div className="content-footer">
         <div className="address">
           <span>

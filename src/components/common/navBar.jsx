@@ -74,7 +74,7 @@ const NavBar = () => {
                     <span className="icon-bar"></span>
                   </button>
                   <Link to="/">
-                    <img src="images/logo.png" className="img-responsive" />
+                    <img src="/images/logo.png" className="img-responsive" />
                   </Link>
                 </div>
 
@@ -95,42 +95,6 @@ const NavBar = () => {
                     <li>
                       <Link to="/list">New Cars</Link>
                     </li>
-                    {/* <li>
-                      <a to="#">Accessories</a>
-                    </li>
-                    <li>
-                      <a to="#">Media</a>
-                    </li>
-                    <li>
-                      <a to="#">Moto Directory</a>
-                    </li>
-                    <li className="dropdown">
-                      <a
-                        to="#"
-                        className="dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Forums <span className="caret"></span>
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li>
-                          <a to="#">Action</a>
-                        </li>
-                        <li>
-                          <a to="#">Another action</a>
-                        </li>
-                        <li>
-                          <a to="#">Something else here</a>
-                        </li>
-                        <li role="separator" className="divider"></li>
-                        <li>
-                          <a to="#">Separated link</a>
-                        </li>
-                      </ul>
-                    </li> */}
                   </ul>
                 </div>
                 {/* <!-- /.navbar-collapse --> */}

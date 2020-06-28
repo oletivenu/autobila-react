@@ -5,6 +5,7 @@ import TabSection from "./tabSection";
 import Features from "./features";
 class AutoDetails extends Component {
   render() {
+    const autoattachments = this.props.autoattachments;
     return (
       <main>
         <div className="container">
@@ -24,7 +25,7 @@ class AutoDetails extends Component {
           <div className="row">
             <div className="details_section">
               <div className="col-sm-8">
-                <Slider />
+                <Slider attachments={autoattachments} />
                 <TabSection />
               </div>
               <div className="col-sm-4">

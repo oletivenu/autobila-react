@@ -1,38 +1,35 @@
-import React from "react";
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-const DealersBar = () => {
-  return (
-    <div className="container">
-      <div className="logo_section">
-        <h2>Certified official dealers</h2>
-        <div className="logo_title">
-          <div className="or-seperator">
-            <i>
-              <i className="fa fa-car" aria-hidden="true" />
-            </i>
-          </div>
-        </div>
-
-        <ul id="flexiselDemo3">
-          <li>
+export default class DealersBar extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+    };
+    return (
+      <div>
+        <Slider {...settings}>
+          <div>
             <img src="images/logos/fiat.png" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="images/logos/jagore.png" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="images/logos/nissan.png" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="images/logos/vw.png" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="images/logos/ford.png" />
-          </li>
-        </ul>
+          </div>
+        </Slider>
       </div>
-    </div>
-  );
-};
-
-export default DealersBar;
+    );
+  }
+}

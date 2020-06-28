@@ -7,6 +7,7 @@ import ServiceBar from "../components/common/serviceBar";
 
 import FooterBar from "../components/footerBar";
 import DealersBar from "../components/common/dealersBar";
+import { autoitems } from "../data/autolist";
 
 function Main() {
   return (
@@ -19,7 +20,7 @@ function Main() {
         </div>
       </div>
       <SearchBar />
-      <TypeCars />
+      <TypeCars items={autoitems} />
       <WelcomeBar />
       {/* <ServiceBar /> */}
       <DealersBar />
