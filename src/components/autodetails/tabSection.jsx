@@ -1,19 +1,19 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 const TabSection = () => {
   return (
     <div>
-      <div className="details_section_tabs">
-        <input id="tab1" type="radio" name="tabs" />
-        <label htmlFor="tab1">Vehicle overview</label>
-        <input id="tab2" type="radio" name="tabs" />
-        <label htmlFor="tab2">Technical</label>
-        <input id="tab3" type="radio" name="tabs" />
-        <label htmlFor="tab3">Features Options</label>
-        <input id="tab4" type="radio" name="tabs" />
-        <label htmlFor="tab4">Contact</label>
-        <section id="content1">
+      <Tabs>
+        <TabList>
+          <Tab>INTERIOR DESIGN</Tab>
+          <Tab>EXTERIOR FEATURES</Tab>
+          <Tab>SECURITY & ENVIRONMENT</Tab>
+          <Tab>SERVICE</Tab>
+        </TabList>
+
+        <TabPanel>
           <p>
             Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage
             pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump
@@ -25,8 +25,8 @@ const TabSection = () => {
             corned beef beef tenderloin short loin meatloaf swine ground round
             venison.
           </p>
-        </section>
-        <section id="content2">
+        </TabPanel>
+        <TabPanel>
           <p>
             Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky
             drumstick fatback boudin ball tip turducken. Pork belly meatball
@@ -48,8 +48,8 @@ const TabSection = () => {
             Corned beef tri-tip leberkas flank sausage ham hock filet mignon
             beef ribs pancetta turkey.
           </p>
-        </section>
-        <section id="content3">
+        </TabPanel>
+        <TabPanel>
           <p>
             Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage
             pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump
@@ -61,8 +61,8 @@ const TabSection = () => {
             corned beef beef tenderloin short loin meatloaf swine ground round
             venison.
           </p>
-        </section>
-        <section id="content4">
+        </TabPanel>
+        <TabPanel>
           <p>
             Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky
             drumstick fatback boudin ball tip turducken. Pork belly meatball
@@ -84,8 +84,8 @@ const TabSection = () => {
             Corned beef tri-tip leberkas flank sausage ham hock filet mignon
             beef ribs pancetta turkey.
           </p>
-        </section>
-      </div>
+        </TabPanel>
+      </Tabs>
     </div>
   );
 };

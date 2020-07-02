@@ -1,3 +1,7 @@
+export function getAutoitems(id) {
+  return autoitems.find((m) => m.Id == id);
+}
+
 export const autoitems = [
   {
     Id: 21,
@@ -11,7 +15,7 @@ export const autoitems = [
     Price: "97946464.00",
     Year: 2017,
     Kilometers: 6565464,
-    AutoType: "Autoavan",
+    AutoType: "Caravan",
     Color: "Red",
     InteriorColor: "Silver",
     GearBox: "Automatic",

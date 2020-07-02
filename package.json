@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^7.15.5",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-items-carousel": "^2.8.0",
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.1",
-    "react-slick": "^0.26.1"
+    "react-slick": "^0.26.1",
+    "react-tabs": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

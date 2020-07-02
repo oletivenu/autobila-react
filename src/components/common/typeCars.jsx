@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import ItemsCarousel from "react-items-carousel";
 
-function TypeCars(props) {
+export default function TypeCars(props) {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   const items = props.items;
@@ -43,5 +43,3 @@ function TypeCars(props) {
     </div>
   );
 }
-
-export default TypeCars;

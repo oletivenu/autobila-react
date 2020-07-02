@@ -3,9 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import Slider from "./slider";
 import TabSection from "./tabSection";
 import Features from "./features";
+import Login from "./../auth/login";
 class AutoDetails extends Component {
   render() {
     const autoattachments = this.props.autoattachments;
+    const autoitems = this.props.autoitems;
     return (
       <main>
         <div className="container">
@@ -29,7 +31,7 @@ class AutoDetails extends Component {
                 <TabSection />
               </div>
               <div className="col-sm-4">
-                <Features />
+                <Features autoitems={autoitems} />
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import NavBar from "../components/common/navBar";
 import SearchBar from "../components/common/searchBar";
 import TypeCars from "../components/common/typeCars";
